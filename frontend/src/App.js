@@ -21,24 +21,24 @@ const App = () => {
     {offset !== 0 && 
       <ScrollNavBar />
     }
-      <Section className="banner-section" />
-      <div className='about-section'>
+      <Section className="section banner-section" />
+      <div className='section about-section'>
         <div className='about-img'>
 
         </div>
         <div className='about-txt'>
-          <h3>About Jamaica Zoo </h3>
-          <h1>Welcome to our Zoo...</h1>
+          <h1>About Jamaica Zoo </h1>
+          <h3>Welcome to our Zoo...</h3>
           <p>
             We have a wide variety of animals. Some of our animals include Lions (born in Santa Cruz, St. Elizabeth), Llamas, Zebras, Monkeys, Crocodiles, and Toucans to name a few. We also have a petting area, in which our visitors have the option to take pictures with some of our smaller animals, such as our Ball Python Snake who’s given name is Peter, as well as Lizzy who is a baby green Iguana. Not to mention our pet crocodile “Sof” and a few more. We also have beautifully landscaped lawns, where our visitors can spread a blanket, relax and have a picnic.
           </p>
           <button>Learn More</button>
         </div>
       </div>
-      <div className='animals-section'>
+      <div className='section animals-section'>
         <div className='animnals-txt'>
-          <h3>Come For The Animals </h3>
-          <h1>Stay To Relax & explore</h1>
+          <h1>Come For The Animals </h1>
+          <h3>Stay To Relax & explore</h3>
           <p>
             Jamaica Zoo can be a place for fun and relaxation or as an educational facility. One can learn about the plants and the different animals by one of our well-trained tour guides who will gladly escort you around the property.
           </p>
@@ -47,9 +47,9 @@ const App = () => {
           </p>
           <button>Learn More</button>
         </div>
+      <Section className='section cta-img' />
       </div>
-      <Section className='cta-img' />
-      <div className='animal-list__section'>
+      <div className='section animal-list__section'>
         <ul className='animal-list1'>
           <li>lorem ipsum test</li>
           <li>lorem ipsum test</li>
@@ -93,7 +93,7 @@ const App = () => {
 
         </div>
       </div>
-      <div className='buttons-section'>
+      <div className='section buttons-section'>
         <button>Become a Member</button>
         <button>Make a Donation</button>
         <button>View Promotions</button>
