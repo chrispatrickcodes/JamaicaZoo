@@ -1,4 +1,4 @@
-.NavBar-ctr{
+.NavBar-ctr {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -7,13 +7,13 @@
     color: orange;
 }
 
-.brand-ctr{
+.brand-ctr {
     margin-right: auto;
     width: 100px;
     height: 100%;
 }
 
-.menu-items__ctr{
+.menu-items__ctr {
     margin-left: auto;
     width: 50%;
     display: flex;
@@ -23,17 +23,23 @@
     padding-right: 5%;
 }
 
-.menu-item{
-    margin: 5px;
-    text-align: center;
-    filter: drop-shadow(3px 5px 2px black);
+a.menu-item {
+    height: 40px;
+    width: 100px;
 }
 
-.menu-item svg{
+.menu-item {
+    margin: 5px;
+    text-align: center;
+    background-image: url('../assets/brush-stroke.png');
+    background-size: 100px 40px;
+}
+
+.menu-item svg {
     transform: translateY(5px);
 }
 
-.brand-icon{
+.brand-icon {
     display: inline-block;
     height: 100%;
     width: 100%;
@@ -41,12 +47,13 @@
     background-size: 100% 300px; */
 }
 
-.cart-icon{
+.cart-icon {
     height: 22px;
     display: inline-block;
 }
 
-a, a:visited {
-    color: orange;
+a,
+a:visited {
+    color: black;
     text-decoration: none;
 }

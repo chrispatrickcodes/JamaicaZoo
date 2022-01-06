@@ -3,25 +3,46 @@ import './App.css';
 import Section from './components/Section'
 import NavBar from './components/NavBar'
 import ScrollNavBar from './components/ScrollNavBar';
+import parrots from './assets/parrots.jpg';
+import zebras from './assets/zebras.jpg';
+import croc from './assets/croc.jpg';
+
+
 
 const App = () => {
 
   const [offset, setOffset] = useState(0);
 
+  const [imagePath, setImagePath] = useState(croc);
+
+  const bannerImages = [
+    croc,
+    parrots,
+    zebras
+  ];
+
+  let i = 0;
+
   useEffect(() => {
     window.onscroll = () => {
       setOffset(window.scrollY);
     }
+    const interval = setInterval(() => {
+      i++;
+      if(i === bannerImages.length)
+        i = 0;
+      setImagePath(bannerImages[i]);
+    }, 10000);
   }, [])
   return (
     <div className="App">
-    {offset === 0 && 
-      <NavBar />
-    }
-    {offset !== 0 && 
-      <ScrollNavBar />
-    }
-      <Section className="section banner-section" />
+      {offset === 0 &&
+        <NavBar />
+      }
+      {offset !== 0 &&
+        <ScrollNavBar />
+      }
+      <Section id='banner-section' imgCount={3} img={imagePath} className="section banner-section" />
       <div className='section about-section'>
         <div className='about-img'>
 
@@ -47,7 +68,7 @@ const App = () => {
           </p>
           <button>Learn More</button>
         </div>
-      <Section className='section cta-img' />
+        <Section className='section cta-img' />
       </div>
       <div className='section animal-list__section'>
         <ul className='animal-list1'>
@@ -94,10 +115,12 @@ const App = () => {
         </div>
       </div>
       <div className='section buttons-section'>
-        <button>Become a Member</button>
-        <button>Make a Donation</button>
-        <button>View Promotions</button>
-        <button>See Our Gallery</button>
+        <div className='buttons-ctr'>
+          <button>Become a Member</button>
+          <button>Make a Donation</button>
+          <button>View Promotions</button>
+          <button>See Our Gallery</button>
+        </div>
       </div>
     </div>
   );

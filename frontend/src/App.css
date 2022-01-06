@@ -15,8 +15,7 @@
 .banner-section{
   min-height: 100%;
   min-width: 100%;
-  background-image: url("./assets/croc.jpg");
-  background-size: 100% 800px;
+  background-size: 100% 100%;
 }
 
 .about-section{
@@ -29,7 +28,7 @@
 .about-img{
   width: 50%;
   background-image: url("./assets/aboutimg.jpg");
-  background-size: 100% 700px;
+  background-size: 100% 100%;
 }
 .about-txt{
   width: 50%;
@@ -56,7 +55,7 @@
   min-height: 100%;
   min-width: 50%;
   background-image: url("./assets/WildWorld.png");
-  background-size: 100% 700px;
+  background-size: 100% 100%;
   padding: 3em;
 }
 
@@ -92,18 +91,62 @@
   min-height: 100%;
   min-width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  background-image: url("./assets/zebra-football.gif");
+  background-size: cover;
 }
-.buttons-section button{
-  height: 25%;
-  padding-top: 75px;
+
+.buttons-ctr{
+  min-height: 100%;
+  min-width: 60%;
+  max-width: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+.buttons-section button{
+  height: 25%;
+  min-width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: orange;
   border-radius: 10px;
+  text-align: center;
 }
 .buttons-section button:hover{
   transform: translateY(-20px);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1400px) {
+  [class*="App"] {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  [class*="App"] {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  [class*="App"] {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  [class*="App"] {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  [class*="App"] {
+    font-size: 12px;
+  }
 }
