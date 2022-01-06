@@ -1,152 +1,160 @@
 .App {
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  display:flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  font-size: 24px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-size: 24px;
 }
 
-.section{
-  padding: 2em;
+.section {
+    padding: 2em;
 }
 
-.banner-section{
-  min-height: 100%;
-  min-width: 100%;
-  background-size: 100% 100%;
+.banner-section {
+    min-height: 100%;
+    min-width: 100%;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.about-section{
-  min-height: 100%;
-  min-width: 100%;
-  display: flex;
-  flex-direction: row;
+.about-section {
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
-.about-img{
-  width: 50%;
-  background-image: url("./assets/aboutimg.jpg");
-  background-size: 100% 100%;
+.about-img {
+    width: 50%;
+    background-image: url("./assets/aboutimg.jpg");
+    background-size: 100% 100%;
 }
-.about-txt{
-  width: 50%;
-  text-align: left;
-  padding: 3em;
+
+.about-txt {
+    width: 50%;
+    text-align: left;
+    padding: 3em;
 }
+
+
 /* .about-txt p {
   text-indent: 20px;
 } */
 
 .about-txt h1 {
-  text-align: center;
+    text-align: center;
 }
 
-.animals-section{
-  min-height: 100%;
-  text-align: left;
-  display: flex;
-  flex-direction: row;
+.animals-section {
+    min-height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
 }
 
-
-.cta-img{
-  min-height: 100%;
-  min-width: 50%;
-  background-image: url("./assets/WildWorld.png");
-  background-size: 100% 100%;
-  padding: 3em;
+.cta-img {
+    min-height: 100%;
+    min-width: 50%;
+    background-image: url("./assets/WildWorld.png");
+    background-size: 100% 100%;
+    padding: 3em;
 }
 
-.animals-txt{
-  width: 50%;
-  padding: 3em;
+.animals-txt {
+    width: 50%;
+    padding: 3em;
 }
 
-.animals-section h1{
-  text-align: center;
+.animals-section h1 {
+    text-align: center;
 }
 
-.animal-list__section{
-  min-height: 100%;
-  min-width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.animal-list__section {
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.animal-list{
-  display: inline-block
+.animal-list {
+    display: inline-block
 }
 
-.animal-list__img{
-  min-height: 70%;
-  min-width: 25%;
-  background-image: url("./assets/animallistimg.jpg");
-  background-size: 100% 100%;
+.animal-list__img {
+    min-height: 70%;
+    min-width: 25%;
+    background-image: url("./assets/animallistimg.jpg");
+    background-size: 100% 100%;
 }
 
-.buttons-section{
-  min-height: 100%;
-  min-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  flex-direction: column;
-  background-image: url("./assets/zebra-football.gif");
-  background-size: cover;
+.buttons-section {
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    background-image: url("./assets/zebra-football.gif");
+    background-size: cover;
 }
 
-.buttons-ctr{
-  min-height: 100%;
-  min-width: 60%;
-  max-width: 60%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.buttons-ctr {
+    min-height: 100%;
+    min-width: 60%;
+    max-width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
-.buttons-section button{
-  height: 25%;
-  min-width: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: orange;
-  border-radius: 10px;
-  text-align: center;
+
+.buttons-section button {
+    height: 25%;
+    min-width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: orange;
+    border-radius: 10px;
+    text-align: center;
 }
-.buttons-section button:hover{
-  transform: translateY(-20px);
-  cursor: pointer;
+
+.buttons-section button:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1400px) {
-  [class*="App"] {
-    font-size: 20px;
-  }
+    [class*="App"] {
+        font-size: 20px;
+    }
 }
+
 @media only screen and (max-width: 1200px) {
-  [class*="App"] {
-    font-size: 18px;
-  }
+    [class*="App"] {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
-  [class*="App"] {
-    font-size: 16px;
-  }
+    [class*="App"] {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-  [class*="App"] {
-    font-size: 14px;
-  }
+    [class*="App"] {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-  [class*="App"] {
-    font-size: 12px;
-  }
+    [class*="App"] {
+        font-size: 12px;
+    }
 }

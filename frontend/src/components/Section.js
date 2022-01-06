@@ -14,7 +14,7 @@ const Section = (props) => {
         let i = 0;
         let radios = [];
         while (i < count) {
-            radios.push(<input type="radio" />);
+            radios.push(<input key={i} type="radio" />);
             i++;
         }
         return (radios);
