@@ -15,6 +15,12 @@ const NavBar = () => {
         <a className='menu-item' href='/shopping'>
           <CartIcon className='cart-icon' />
         </a>
+        <a className='menu-item' href='/ticketinfo' target="_blank">Plan Your Visit</a>
+        <a className='menu-item' href='/ticketinfo' target="_blank">About</a>
+        <a className='menu-item' href='/ticketinfo' target="_blank">Events</a>
+        <a className='menu-item' href='/ticketinfo' target="_blank">Animals</a>
+        <a className='menu-item' href='/ticketinfo' target="_blank">Shop Online</a>
+        <a className='menu-item' href='/ticketinfo' target="_blank">Contact</a>
         <a className='menu-item' href='/ticketinfo' target="_blank">Ticket Info</a>
       </div>
     </div>

@@ -15,7 +15,7 @@
 
 .menu-items__ctr {
     margin-left: auto;
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: right;
@@ -25,14 +25,15 @@
 
 a.menu-item {
     height: 40px;
-    width: 100px;
+    width: 120px;
 }
 
 .menu-item {
     margin: 5px;
     text-align: center;
-    background-image: url('../assets/brush-stroke.png');
-    background-size: 100px 40px;
+    background-image: url('../assets/bstroke.svg');
+    background-size: 120px 40px;
+    font-size: 1.5vw;
 }
 
 .menu-item svg {

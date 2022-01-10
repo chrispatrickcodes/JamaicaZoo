@@ -34,6 +34,12 @@ const App = () => {
       setImagePath(bannerImages[i]);
     }, 10000);
   }, [])
+
+const handleBannerRadioClick = (e) => {
+  let index = e.id;
+  setImagePath(bannerImages[index-1]);
+}
+
   return (
     <div className="App">
       {offset === 0 &&
@@ -42,7 +48,7 @@ const App = () => {
       {offset !== 0 &&
         <ScrollNavBar />
       }
-      <Section id='banner-section' imgCount={3} img={imagePath} className="section banner-section" />
+      <Section id='banner-section' handleBannerRadioClick={handleBannerRadioClick} imgCount={3} img={imagePath} className="section banner-section" />
       <div className='section about-section'>
         <div className='about-img'>
 
