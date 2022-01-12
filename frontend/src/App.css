@@ -74,61 +74,188 @@
 }
 
 .animal-list__section {
-    min-height: 100%;
+    min-height: 800px;
     min-width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgb(222,130,39);
+    background: linear-gradient(170deg, rgba(222,130,39,1) 0%, rgba(230,160,91,1) 35%, rgba(255,255,255,1) 100%);
 }
 
-.animal-list {
-    display: inline-block
+.stats-header{
+    height:25%;
+    width: 80%;
+    display: flex;
+    align-items: center;
 }
 
-.animal-list__img {
-    min-height: 70%;
-    min-width: 25%;
-    background-image: url("./assets/animallistimg.jpg");
+.stat-ctr{
+    width: 33%;
+    height: 50%;
+}
+
+.gallery-ctr{
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gallery-img{
+    height: 100%;
+    width: 100%;
+}
+
+.gallery-img:hover .hover-overlay{
+    height: 100%;
+    opacity: 75%;
+}
+
+.hover-overlay{
+    display: block;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    background: rgb(222,130,39);
+    background: linear-gradient(0deg, rgba(222,130,39,1) 0%, rgba(254,236,217,0.4511687115925115) 69%, rgba(255,255,255,0) 100%);
+    opacity: 0%;
+}
+#gi1{
+    height: 66%;
+    width: 25%;
+}
+#gi2{
+    height: 66%;
+    width: 50%;
+    background-image: url(./assets/lion.jpg);
     background-size: 100% 100%;
 }
-
+#gi3{
+    height: 66%;
+    width: 24.5%;
+    background-image: url(./assets/smonkey-1.jpg);
+    background-size: 100% 100%;
+}
+#gi4{
+    height: 50%;
+    width: 100%;
+    background-image: url(./assets/zebras2.jpg);
+    background-size: 100% 100%;
+}
+#gi5{
+    height: 34%;
+    width: 25%;
+    background-image: url(./assets/parrots2.jpg);
+    background-size: 100% 100%;
+}
+#gi6{
+    height: 34%;
+    width: 25%;
+    background-image: url(./assets/alpaca.jpg);
+    background-size: 100% 100%;
+}
+#gi7{
+    height: 34%;
+    width: 49.5%;
+    background-image: url(./assets/crocodile.jpg);
+    background-size: 100% 100%;
+}
+#gi8{
+    height: 50%;
+    width: 100%;
+    background-image: url(./assets/rabbits.jpg);
+    background-size: 100% 100%;
+}
 .buttons-section {
-    min-height: 100%;
+    min-height: 800px;
     min-width: 100%;
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     flex-direction: column;
-    background-image: url("./assets/zebra-football.gif");
-    background-size: cover;
+    background: rgb(222,130,39);
+    background: linear-gradient(10deg, rgba(222,130,39,1) 0%, rgba(230,160,91,1) 35%, rgba(255,255,255,1) 100%);
+    /*background-image: url("./assets/zebra-football.gif");
+    background-size: cover; */
 }
 
 .buttons-ctr {
-    min-height: 100%;
-    min-width: 60%;
-    max-width: 60%;
+    height: 70%;
+    width: 90%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
-
-.buttons-section button {
-    height: 25%;
-    min-width: 20%;
+.button-ctr{
+    height: 47%;
+    width: 32%;
+    overflow:hidden;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: orange;
-    border-radius: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 8px 12px 11px -3px rgba(0,0,0,0.73); 
+    box-shadow: 8px 12px 11px -3px rgba(0,0,0,0.73);
+}
+.buttons-section .button {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
-.buttons-section button:hover {
-    transform: translateY(-20px);
+
+.buttons-section .button:hover {
+    transform: scale(1.5);
+    transition-duration: 2s;
     cursor: pointer;
 }
 
+.button{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#bam-button{
+    background-image: url('./assets/pf-snake.jpg');
+    background-size: 100% 300px;
+}
+
+#mad-button{
+    background-image: url('./assets/ylw-parrot.jpg');
+    background-size: 100% 300px;
+}
+
+#vp-button{
+    background-image: url('./assets/zebra-eat.jpg');
+    background-size: 100% 300px;
+}
+
+#sog-button{
+    background-image: url('./assets/tiny-croc.png');
+    background-size: 100% 300px;
+}
+
+.button-link{
+    color: white;
+    z-index: 5;
+    position: relative;
+}
+.button-link:visited{
+    color: white;
+}
 @media only screen and (max-width: 1400px) {
     [class*="App"] {
         font-size: 20px;
