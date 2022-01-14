@@ -252,6 +252,7 @@
     color: white;
     z-index: 5;
     position: relative;
+    font-weight: bold;
 }
 .button-link:visited{
     color: white;

@@ -33,16 +33,32 @@ const App = () => {
     }
     const interval = setInterval(() => {
       i++;
-      if (i === bannerImages.length)
+      if (i >= bannerImages.length)
         i = 0;
+
+      document.getElementById(`${i}`).checked = true;
+      switch (i) {
+        case (0):
+          document.getElementById(`${1}`).checked = false;
+          document.getElementById(`${2}`).checked = false;
+          break;
+        case (1):
+          document.getElementById(`${0}`).checked = false;
+          document.getElementById(`${2}`).checked = false;
+          break;
+        case (2):
+          document.getElementById(`${0}`).checked = false;
+          document.getElementById(`${1}`).checked = false;
+          break;
+      }
       setImagePath(bannerImages[i]);
     }, 10000);
 
     let count = 0;
     const animalInterval = setInterval(() => {
       count++;
-      if(count <  133){
-      setAnimalCount(count);
+      if (count < 133) {
+        setAnimalCount(count);
       } else {
         clearInterval(animalInterval);
       }
@@ -51,8 +67,8 @@ const App = () => {
     let count2 = 0;
     const speciesInterval = setInterval(() => {
       count2++;
-      if(count2 <  31){
-      setSpeciesCount(count2);
+      if (count2 < 31) {
+        setSpeciesCount(count2);
       } else {
         clearInterval(speciesInterval);
       }
@@ -61,8 +77,8 @@ const App = () => {
     let count3 = 0;
     const acreInterval = setInterval(() => {
       count3++;
-      if(count3 <  101){
-      setAcreCount(count3);
+      if (count3 < 101) {
+        setAcreCount(count3);
       } else {
         clearInterval(acreInterval);
       }
@@ -70,9 +86,24 @@ const App = () => {
   }, []);
 
 
+
   const handleBannerRadioClick = (e) => {
-    let index = e.id;
-    setImagePath(bannerImages[index - 1]);
+    let index = e.target.id;
+    switch (index) {
+      case ('0'):
+        document.getElementById(1).checked = false;
+        document.getElementById(2).checked = false;
+        break;
+      case ('1'):
+        document.getElementById(0).checked = false;
+        document.getElementById(2).checked = false;
+        break;
+      case ('2'):
+        document.getElementById(0).checked = false;
+        document.getElementById(1).checked = false;
+        break;
+    }
+    setImagePath(bannerImages[index]);
   }
 
 
