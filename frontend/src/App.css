@@ -22,7 +22,6 @@
 }
 
 .about-section {
-    min-height: 100%;
     min-width: 100%;
     display: flex;
     flex-direction: row;
@@ -257,6 +256,92 @@
 .button-link:visited{
     color: white;
 }
+
+.scroll-advert{
+    background-image: url('./assets/lionness.png');
+    background-size: 100% 100%;
+    min-height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advert{
+    background-image: url('./assets/WildWorld.png');
+    background-size: 100% 100%;
+    height: 70%;
+    width: 70%;
+}
+
+.footer{
+    background-color: rgb(24, 23, 23);
+    min-height: 400px;
+}
+
+.footer-ctr{
+    margin: auto;
+    padding: 65px 0 5px 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 14px;
+    color: white;
+    width: 80%;
+    height: 75%;
+}
+.basic-info__ctr{
+    flex-basis: 30%;
+}
+#footer-brand{
+    border: 1px solid white;
+    height: 50%;
+    background-color: white;
+}
+.business-details {
+    flex-basis: 30%;
+    height: 80%;
+    padding: 0 5px;
+}
+.days-hours{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    text-align: left;
+    margin: auto;
+    line-height: 80%;
+}
+.days-hours p{
+    flex-basis: 50%;
+    font-size: 12px;
+}
+.quick-links{
+    height: 80%;
+    flex-basis: 18%;
+}
+.sponsors{
+    flex-basis: 19%;
+    border: 1px solid white;
+    background-color: white;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    padding: 10px;
+}
+.legal{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    padding: 10px;
+}
+
 @media only screen and (max-width: 1400px) {
     [class*="App"] {
         font-size: 20px;

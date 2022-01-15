@@ -220,6 +220,54 @@ const App = () => {
           </div>
         </div>
       </div>
+      <div className='section scroll-advert'>
+        <div className='advert'></div>
+      </div>
+      <div className='footer'>
+        <div className='footer-ctr'>
+          <div className='basic-info__ctr'>
+            <h3>Jamaica Zoo</h3>
+            <div id='footer-brand'></div>
+            <p><strong>Location:</strong> Burton Mountain, Lacovia, St. Elizabeth</p>
+            <p><strong>Phone:</strong> 876-435-999 or 876-487-3001</p>
+            <p><strong>Email:</strong> jamaicazoo.org@gmail.com </p>
+          </div>
+          <div className='business-details'>
+            <h3>Hours of Operation</h3>
+            <div className='days-hours'>
+              <p>Monday</p><p>10:00am - 6:00pm</p>
+              <p>Tuesday</p><p>10:00am - 6:00pm</p>
+              <p>Wednesday</p><p>10:00am - 6:00pm</p>
+              <p>Thursday</p><p>10:00am - 6:00pm</p>
+              <p>Friday</p><p>10:00am - 6:00pm</p>
+              <p>Saturday</p><p>10:00am - 8:00pm</p>
+              <p>Sunday</p><p>10:00am - 8:00pm</p>
+            </div>
+          </div>
+          <div className='quick-links'>
+            <h3>Quick Links</h3>
+            <p>Membership</p>
+            <p>Donations</p>
+            <p>Promotions</p>
+            <p>My Account</p>
+          </div>
+          <div className='sponsors'>
+
+          </div>
+          <div className='socials'>
+            <span>fb</span>
+            <span>twit</span>
+            <span>yt</span>
+            <span>insta</span>
+          </div>
+          <div className='legal'>
+            <p>Return and Refund Policy | </p>
+            <p> Terms and Conditions | </p>
+            <p> Privacy Policy | </p>
+            <p> Copyright ©2021 Jamaica Zoo - All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
