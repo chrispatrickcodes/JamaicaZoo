@@ -296,9 +296,11 @@
     flex-basis: 30%;
 }
 #footer-brand{
-    border: 1px solid white;
     height: 50%;
-    background-color: white;
+    width: 50%;
+    background-image: url('./assets/footer-brand.png');
+    background-size: 100% 100%;
+    margin: auto;
 }
 .business-details {
     flex-basis: 30%;
@@ -310,15 +312,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 90%;
-    height: 100%;
     align-items: center;
     text-align: left;
     margin: auto;
-    line-height: 80%;
 }
 .days-hours p{
     flex-basis: 50%;
-    font-size: 12px;
 }
 .quick-links{
     height: 80%;
@@ -326,8 +325,9 @@
 }
 .sponsors{
     flex-basis: 19%;
-    border: 1px solid white;
-    background-color: white;
+    background-image: url('./assets/sponsors.png');
+    background-size: 100% 100%;
+    border-radius: 10px;
 }
 .socials{
     display: flex;

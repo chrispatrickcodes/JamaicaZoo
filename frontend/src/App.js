@@ -226,7 +226,7 @@ const App = () => {
       <div className='footer'>
         <div className='footer-ctr'>
           <div className='basic-info__ctr'>
-            <h3>Jamaica Zoo</h3>
+            <h2>Jamaica Zoo</h2>
             <div id='footer-brand'></div>
             <p><strong>Location:</strong> Burton Mountain, Lacovia, St. Elizabeth</p>
             <p><strong>Phone:</strong> 876-435-999 or 876-487-3001</p>
